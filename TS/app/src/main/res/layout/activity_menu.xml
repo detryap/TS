@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.learn.tsapp.Menu">
+
+    <Button
+        android:id="@+id/buttonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonJadwal"
+        android:layout_alignBottom="@+id/buttonJadwal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:text="Info" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonReminder"
+        android:layout_alignLeft="@+id/buttonInfo"
+        android:layout_alignStart="@+id/buttonInfo"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/buttonReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonJadwal"
+        android:layout_alignRight="@+id/buttonJadwal"
+        android:layout_centerVertical="true"
+        android:text="Reminder" />
+
+    <Button
+        android:id="@+id/buttonJadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonReminder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:text="Jadwal" />
+</RelativeLayout>
