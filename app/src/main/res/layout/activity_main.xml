@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,29 +10,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
     tools:context="id.sch.smktelkom_mlg.learn.tsapp.MainActivity">
 
-    <Button
-        android:id="@+id/buttonSiswa"
+    <TextView
+        android:text="Teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:fontFamily="monospace"
+        android:typeface="monospace"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="186dp"
-        android:text="Siswa" />
+        android:layout_alignParentStart="true" />
 
-    <Button
-        android:id="@+id/buttonGuru"
+    <TextView
+        android:text="Student"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/buttonSiswa"
-        android:layout_alignBottom="@+id/buttonSiswa"
-        android:layout_alignParentEnd="true"
+        android:id="@+id/tvStudent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:fontFamily="monospace"
+        android:typeface="monospace"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
-        android:text="Guru" />
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

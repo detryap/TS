@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_signup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    fitsSystem_Windows="true"
-    tools:context="id.sch.smktelkom_mlg.learn.tsapp.SignupActivity">
+    tools:context="id.sch.smktelkom_mlg.learn.tsapp.LoginActivity"
+    android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -101,4 +101,4 @@
             android:layout_marginBottom="20dp"
             android:visibility="gone" />
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

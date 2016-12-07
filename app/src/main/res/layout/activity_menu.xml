@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_menu"
     android:layout_width="match_parent"
@@ -8,47 +9,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.learn.tsapp.Menu">
+    tools:context="id.sch.smktelkom_mlg.learn.tsapp.MenuActivity">
 
-    <Button
-        android:id="@+id/buttonInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/buttonJadwal"
-        android:layout_alignBottom="@+id/buttonJadwal"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:text="Info" />
-
-    <Button
-        android:id="@+id/buttonLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonReminder"
-        android:layout_alignLeft="@+id/buttonInfo"
-        android:layout_alignStart="@+id/buttonInfo"
-        android:text="Logout" />
-
-    <Button
-        android:id="@+id/buttonReminder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/buttonJadwal"
-        android:layout_alignRight="@+id/buttonJadwal"
-        android:layout_centerVertical="true"
-        android:text="Reminder" />
-
-    <Button
-        android:id="@+id/buttonJadwal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonReminder"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_schedule"
+        android:id="@+id/ivSchedule"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/ivAnnouncement"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="47dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginStart="37dp"
-        android:text="Jadwal" />
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_reminder"
+        android:id="@+id/ivReminder"
+        android:layout_alignTop="@+id/ivLogout"
+        android:layout_alignLeft="@+id/ivSchedule"
+        android:layout_alignStart="@+id/ivSchedule" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_logout"
+        android:id="@+id/ivLogout"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/ivAnnouncement"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_announcement"
+        android:id="@+id/ivAnnouncement"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ivLogout"
+        android:layout_alignStart="@+id/ivLogout" />
 </RelativeLayout>

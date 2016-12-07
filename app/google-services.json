@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "895144134665",
+    "firebase_url": "https://telkomscheduler-e1fa9.firebaseio.com",
+    "project_id": "telkomscheduler-e1fa9",
+    "storage_bucket": "telkomscheduler-e1fa9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895144134665:android:c70d5ce8769e45ef",
+        "android_client_info": {
+          "package_name": "id.sch.smktelkom_mlg.learn.tsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895144134665-0h4pi0225aqg0f6d6p9p9qaccs86lgcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAX2fo1PdiSy_0Zt_92TMEcSepRsQgM5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
